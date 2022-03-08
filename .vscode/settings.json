@@ -1,0 +1,46 @@
+{
+  "C_Cpp_Runner.cStandard": "c11",
+  "C_Cpp_Runner.cppStandard": "c++11",
+  "C_Cpp_Runner.msvcBatchPath": "",
+  "C_Cpp_Runner.warnings": [
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic"
+  ],
+  "C_Cpp_Runner.enableWarnings": true,
+  "C_Cpp_Runner.warningsAsError": false,
+  "C_Cpp_Runner.compilerArgs": [
+    "-mmcu=atmega32u4",
+    ""
+  ],
+  "C_Cpp_Runner.linkerArgs": [
+    "-mmcu=atmega32u4",
+    ""
+  ],
+  "C_Cpp_Runner.includePaths": [
+    "c:/calismalar/Marlin_deneme1/include",
+    "c:/calismalar/Marlin_deneme1/src",
+    "C:/Users/Fatih/.platformio/packages/framework-arduino-avr/cores/arduino",
+    "C:/Users/Fatih/.platformio/packages/framework-arduino-avr/variants/leonardo",
+    "C:/Users/Fatih/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+    "C:/Users/Fatih/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+    "C:/Users/Fatih/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+    "C:/Users/Fatih/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+    "C:/Users/Fatih/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+    "C:/Users/Fatih/.platformio/packages/tool-unity",
+    ""
+  ],
+  "C_Cpp_Runner.includeSearch": [
+    "*",
+    "**/*"
+  ],
+  "C_Cpp_Runner.excludeSearch": [
+    "**/build",
+    "**/build/**",
+    "**/.*",
+    "**/.*/**",
+    "**/.vscode",
+    "**/.vscode/**"
+  ],
+  "C_Cpp_Runner.cCompilerPath": "C:/Users/Fatih/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe"
+}
