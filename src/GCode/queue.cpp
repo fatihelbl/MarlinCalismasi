@@ -4,7 +4,12 @@
 
 GCodeQueue::SerialState GCodeQueue::serial_state[1] = {0}; //!< Serial states for each serial port
 Buffer buffer;
-
+GCodeQueue::GCodeQueue(Motor &iMotor)
+{
+    motor = &iMotor;
+    
+    
+} 
 
 inline void Buffer ::_commit_command(bool say_ok)
 {
@@ -81,7 +86,7 @@ inline bool process_line_done(uint8_t &sis, char (&buff)[96], int &ind)
 
 void GCodeQueue ::get_serial_commands()
 {
-
+    
     for (bool hadData = true; hadData;)
     {
 
@@ -120,7 +125,7 @@ void GCodeQueue ::get_serial_commands()
                 char *npos = strchr(command, 'A');
                 if (*npos == 'A')
                 {
-                    Serial.print("A**");
+                     motor->drive(100,true);
                 }
                 char *M = strchr(command, 'B');
                 if (*M == 'B')

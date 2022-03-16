@@ -1,0 +1,6 @@
+// Motor
+#define STEPS_PER_MM 800
+#define WAIT_ON_TOP 100
+#define RMS_CURRENT 600
+#define WAIT_ON_TOP 100
+#define DEFAULT_PRINT_SPEED 300

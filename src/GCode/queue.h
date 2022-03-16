@@ -1,14 +1,16 @@
 #pragma once
-
+#include "Motor/Motor.h"
 #include <RingBuffer/RingBuffer.h>
 
 class GCodeQueue
 {
 private:
-   
+
+  Motor *motor; 
 
 public:
-    static void get_serial_commands();
+    GCodeQueue(Motor &);
+    void get_serial_commands();
  
     struct SerialState
     {
